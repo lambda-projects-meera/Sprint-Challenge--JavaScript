@@ -159,37 +159,27 @@ The zoos are concerned about animals with a lower population count. Find out whi
 
 */
 
-// let lowerPopulation = zooAnimals.filter(function(animal){
-//   if (animal.population < 5){
-//     return animal.animal_name;
-//   }
-// });
-
-// console.log(lowerPopulation);
-
-
-const lowerPopulation = [];
-
-for (let i = 0; i < zooAnimals.length; i++){
-  if (zooAnimals[i].population < 5){
-    lowerPopulation.push(zooAnimals[i].animal_name);
+let lowerPopulation = zooAnimals.filter(function(animal){
+  if (animal.population < 5){
+    return animal.animal_name;
   }
-}
+});
+
+// let lowerPopulation = zooAnimals.filter(animal => animal.population < 5);
 
 console.log(lowerPopulation);
 
 
+// const lowerPopulation = [];
 
-
-// const uni = [];
-
-// for (let i = 0; i < graduates.length; i++) {
-//   if (graduates[i].university.includes("Uni")){
-//     uni.push(graduates[i].university);
+// for (let i = 0; i < zooAnimals.length; i++){
+//   if (zooAnimals[i].population < 5){
+//     lowerPopulation.push(zooAnimals[i].animal_name);
 //   }
 // }
 
-console.log(uni)
+// console.log(lowerPopulation);
+
 
 
 
